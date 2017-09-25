@@ -1,63 +1,36 @@
- <?php get_header();
- childcare_breadcrumbs(); ?>
-	<div class="container page-header-inner"> <img src="<?php echo CHILDCARE_TEMPLATE_DIR_URI; ?>/images/callout-shadow.png" class="img-responsive"> </div>
-	<div class="clearfix"></div>
-<div class=" container ">
-<div class="row">
-	<div class="col-md-9">
-		<div class="course-area-blog-post  animate" data-anim-type="zoomIn" data-anim-delay="400">
-			<?php the_post();  ?>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h2>
-				<ul>
-					 <li><i class="fa fa-user"></i> <?php _e('By - ','childcare'); ?><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"> <?php echo get_the_author(); ?> </a></li>
-					 <li><i class="fa fa-globe"> </i> <a href="#"><?php echo get_the_category_list( __( ', ', 'childcare' ) ); ?></a> </li>
-					 <li><i class="fa fa-calendar"></i> <a href="#"><?php the_date(); ?> </a>
-					 <li class="pull-right"><i class="fa fa-heart-o"> </i> <a href="#"><?php comments_popup_link( '0', '1', '%', '', '-'); ?></a></li>
-				</ul>
-			<div class=" home-gallery-col">
-				<div class="home-gallery-img">
-					<?php $default_img = array('class' => "img-responsive");
-								if(has_post_thumbnail()) {
-									the_post_thumbnail('',$default_img); 
-									 } else { ?>
-								<a href="<?php the_permalink(); ?>"><?php echo '<img alt="" src="'. get_template_directory_uri() . '/images/default.png' .'">';?></a>
-								<?php } ?>
-					<div class="gallery-showcase-overlay">
-						<div class="gallery-showcase-overlay-inner"></div> 
-					</div>
-				</div>
-			</div>
-	
-			<div class="blog-post-title">
-				<h4><?php the_title(); ?></h4>				
-				<?php the_content(); ?>
-				<div class="blog-pagination animate fadeInLeft" data-anim-type="">
-				<?php wp_link_pages(); ?>
-				</div>
-			</div>
-			<?php the_post_navigation('nav-below'); ?>
-	<div class="row user_detail">
-		<div class="colam-user-img">
-			<?php
-
-		echo get_avatar( get_the_author_meta( 'user_email' ),'class="img-responsive"' ); ?>
-		</div>
-		<div class="colam-user-name">
-			<h2><?php echo get_the_author(); ?></h2>
-			<h5><i> <?php echo get_the_category_list( __( ', ', 'childcare' ) ); ?> </i>  </h5>
-			
-			<p> <?php echo get_the_author_meta('description'); if(!get_the_author_meta('description')) _e('No description.
-															Please update your profile.','childcare'); ?> </p>	
-		</div>
-	</div>
-<div class="clearfix"> </div>
 <?php
- comments_template( '', true );?>
-	</div>
-</div>	
-<?php get_sidebar(); ?>	
-</div>
-</div>
- <div class="clearfix"></div>
-<?php get_footer(); ?>
-</div>
+/**
+ * The template for displaying all single posts.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package Education_Zone
+ */
+
+get_header();
+?>
+
+	<div id="primary" class="content-area">
+	    <main id="main" class="site-main" role="main">
+
+		<?php
+		while ( have_posts() ) : the_post();
+
+			get_template_part( 'template-parts/content', get_post_format() );
+
+			the_post_navigation();
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php
+get_sidebar();
+get_footer();

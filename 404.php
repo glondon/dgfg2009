@@ -1,27 +1,24 @@
- <?php get_header(); 
- childcare_breadcrumbs(); ?>	
-<div class="container page-header-inner"> <img src="<?php echo CHILDCARE_TEMPLATE_DIR_URI; ?>/images/callout-shadow.png" class="img-responsive"> </div>
-<div class="clearfix"></div>
-<div class="page-not-found"> 
-	<div class="container">
-		<div class="page-not-found-inner"> 
-			<ul>
-				<li class="animate" data-anim-type="fadeInLeft"> <div class="rotted-not-found animate" data-anim-type="fadeInLeft"><?php _e('4','childcare'); ?> </div></li>
-				<li class="animate" data-anim-type="fadeInUp" data-anim-delay="600"><div class="img0-not-found"><img src="<?php echo CHILDCARE_TEMPLATE_DIR_URI; ?>/images/404shape.png" class="img-responsive"></div></li>
-				<li class="animate" data-anim-type="fadeInRight"> <div class="rotted-not-found animate" data-anim-type="fadeInRight"><?php _e('4','childcare'); ?></div></li>
-			</ul>
-				<h2><?php _e('OOPS PAGE NOT-FOUND!','childcare');?> </h2>
-				<h3><?php _e('THE LINK MIGHT BE CORRUPTED','childcare'); ?></h3>
-				<p><?php _e('Your can search what your interested in:','childcare'); ?></p>
-				<div class="col-md-4 form-not-found input-group animate" data-anim-type="fadeInLeft">
-				<?php get_search_form(); ?>
-				</div>
-				<h5><?php _e('or','childcare'); ?> </h5>
-				<a href="<?php echo esc_url(home_url());?>" class="min-btn btn btn-primary"><?php _e('GO TO HOMEPAGE','childcare');?></a>
-			
-		</div>
-	</div>	
-</div>
- <div class="clearfix"></div>
-<?php get_footer(); ?>
-</div>		
+<?php
+/**
+ * The template for displaying 404 pages (not found).
+ *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
+ * @package Education_Zone
+ */
+
+get_header(); ?>
+
+	
+	<span><?php esc_html_e( '404!', 'education-zone' ); ?></span>
+
+    <h1><?php esc_html_e( 'The requested page cannot be found', 'education-zone' ); ?></h1>
+	
+    <p><?php esc_html_e( 'We\'re really sorry! Something went wrong trying to display the page, Please try one of these instead', 'education-zone' ); ?></p>
+	
+    <?php get_search_form(); ?>
+	
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="homepage"><?php esc_html_e( 'Back to homepage', 'education-zone' ); ?></a>
+
+<?php
+get_footer();

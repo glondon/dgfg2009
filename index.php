@@ -1,29 +1,53 @@
- <?php get_header();
- 
- childcare_breadcrumbs(); ?>
-	<div class="container page-header-inner"> <img src="<?php echo CHILDCARE_TEMPLATE_DIR_URI; ?>/images/callout-shadow.png" class="img-responsive"> </div>
-<div class="container ">
-<div class="row blog-item">
-	<div class="col-md-8 smart-gep">
-		
-		<?php if(have_posts()) :
-					while(have_posts()) :
-							the_post(); 
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Education_Zone
+ */
 
-							get_template_part('content','post');
+get_header(); ?>
 
-							endwhile; endif; ?>
-						<div class="clearfix"> </div>
-							<div class="blog-pagination pull-left animate fadeInLeft" data-anim-type="">	   
-								  <?php echo paginate_links( array( 
-									'show_all' => true,
-									'prev_text' => '<<', 
-									'next_text' => '>>',
-									)); ?>
-							</div>
-	</div>
-	<?php get_sidebar(); ?>
- <div class="clearfix"></div>
- </div>
-</div>
-<?php get_footer(); ?>
+	<div id="primary" class="content-area">
+	   
+		<main id="main" class="site-main" role="main">
+
+		<?php
+		if ( have_posts() ) :
+
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
+
+				/*
+				 * Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_format() );
+
+			endwhile;
+
+			   the_posts_pagination( array(
+							        'prev_text'          => __( '&lt;', 'education-zone' ),
+							        'next_text'          => __( '&gt', 'education-zone' ),
+							        'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'education-zone' ) . ' </span>',
+						         ) );
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php
+get_sidebar();
+get_footer();
