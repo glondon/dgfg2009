@@ -1,192 +1,138 @@
-=== Theme Info ===
-Author:asiathemes
-Author URI: https://asiathemes.com/
+=== Education Zone ===
+Author: Rara Theme (http://raratheme.com)
 
-****NOTE****
+Tags: blog, two-columns, right-sidebar, footer-widgets, custom-background, custom-menu, featured-images, threaded-comments, translation-ready, full-width-template, education, theme-options, custom-logo, e-commerce, one-column, post-formats
 
-ALL PRE-FIX used in the childcare is used the PRE-FIXED for all theme by the Asiathemes.
-Consider asiathemes PRE-Fix for function-name and as a slug of the Theme childcare.
+Requires at least: 4.5.3
+Tested up to: 4.7.5
+Stable tag: 1.1.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Theme Name:childcare
 
-CHANGE-LOG FILE:
-@Version: 1.0
-released
+== Description ==
 
-@Version: 1.1
-1. Fixed all issues as per review.
+Education Zone is a free clean, beautiful and professional looking WordPress Theme specially designed for Education Institutions. This theme is best suited for college, school, university,  LMS, Training Center,  Academy, Primary School, High school and Kindergarten and other educational websites. The theme is very flexible and versatile can be used to build various types of business and corporate websites. The theme is highly customizable with various features and personalization options. Education Zone comes with several features to make a user-friendly, interactive and visually stunning website. Such features include custom menu, attractive banner, Stat counter, Courses section, testimonial section, Banner with Call to Action Button (CTA), and social media. The theme is SEO friendly with optimized codes, which make it easy for your site to rank on Google and other search engines. The theme is rigorously tested and optimized for speed and faster page load time and has a secure and clean code. The theme is also translation ready. Designed with visitor engagement in mind, Education Zone helps you to easily and intuitively create professional and appealing websites. If your school, college or university needs an online home that is dynamic and multi-functional, this theme is a good place to start. Check the demo at http://raratheme.com/preview/education-zone/, documentation at http://raratheme.com/documentation/education-zone/, and get support at http://raratheme.com/support-ticket/.
 
-@Version: 1.2
-1. Fixed all issues as per review.
 
-@Version: 1.3
-1. Fixed all issues as per review.
-
-@Version: 1.4
-1. Fixed all issues as per review.
-
-@Version: 1.5
-1. Fixed all issues as per review.
-
-@Version: 1.6
-1. Fixed all issues as per review.
-
-@Version: 1.7
-1. Fixed all issues as per review.
-
-@Version: 1.8
-1. Pagination issue resolved.
-2. Solved all console errors.
-
-@Version: 1.9
-1. Fixed all issues as per review.
-
-@Version: 2.0
-1. Fixed all issues as per review.
-
-@Version: 2.1
-1. Fixed all issues as per review.
-
-@Version: 2.2
-1. Fixed all issues as per review.
-
-@Version: 2.3
-1. Fixed all issues as per review.
-
-@Version: 2.4
-1. Fixed all issues as per review.
-
-@Version: 2.5
-1. Fixed all issues as per review.
-
-@Version: 2.6
-1. Fixed all issues as per review.
-
-@Version: 2.7
-1. Fixed all issues as per review.
-
-@Version: 2.8
-1. Fixed all issues as per review.
-
-@Version: 2.9
-1. Fixed all issues as per review.
-
-*****************Licence Copyrights Attribution*******************
-childcare WordPress Theme, Copyright 2015 asiathemes
-childcare is distributed under the terms of the GNU GPL
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY, without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see .
-
-childcare WordPress Theme bundles the following third-party resources:
-
-*************** Installation ***************
-
-1. In your admin panel, go to Appearance -> Themes and click the Add New button.
+== Installation ==
+        
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
-4. On the screen activate the theme, click on the Help tab to get an overview of the features and instruction quick start. Also see Appearance > Childcare Theme
 
-/***** BUNDELED JS ***/
+== Documentations ==
 
-Animations -- v1.0 --
-Copyright 2014, Joe Mottershaw
-Licensed under MIT https://github.com/twbs/bootstrap/blob/master/LICENSE
-Visible, Sam Sehnert, samatdf, TeamDF, https://github.com/teamdf/jquery-visible/
-Source: https://github.com/joemottershaw/
+1. Setting up the Homepage
+    1. To set up the homepage you must first create a new page. 
+    2. Create a new Page
+    3. Go to Pages > Add New.
+    4. Enter the Page Title for the Page
+    5. You do not require to enter anything in the content section for creating a home page. 
+    6. Select the Homepage Template from the Page Attributes section 
+    7. Click Publish.
 
-Bootstrap -- v3.3.5 --
-Copyright 2011-2015 Twitter, Inc.
-Licensed under MIT license :http://opensource.org/licenses/MIT
-Source:http://getbootstrap.com
+Detailed Documentation can be found here https://raratheme.com/documentation/education-zone/
 
-jquery.rotate.js 
-JQuery CSS Rotate property using CSS3 Transformations
-Copyright (c) 2011 Jakub Jankiewicz  <http://jcubic.pl>
-licensed under the LGPL Version 3 license.
-Licensed under GPL/MIT license : http://www.gnu.org/licenses/lgpl.html
+== Copyrights and License ==
 
-page-scroll jQuery
-Author: Asiathemes Theme
-Created by: Asiathemes
-Copyright (c) 2015 Asiathemes
-Date: 27 Dec, 2015
-http://www.asiathemes.com
-Dual licensed under the MIT license and GPL license.
+Unless otherwise specified, all the theme files, scripts and images are licensed under GPLv2 or later
 
-menu.js jquery
-Copyright 2015 asiathemes
-Just to make hover effects of the menu.
 
-/***** BUNDELED CSS***/
+External resources linked to the theme.
+* Lato Font by through Google Font 
+https://www.google.com/fonts/specimen/Lato
 
-Font Awesome CSS -- v4.4.0 -- 
-Copyright 2015  Dave Gandy.,
-Released under the MIT license: http://fortawesome.github.io/Font-Awesome/license/
-Source: https://fortawesome.github.io/Font-Awesome/
+* Roboto Font by through Google Font 
+https://www.google.com/fonts/specimen/Roboto
 
-Bootstrap CSS -- v3.3.5 -- 
-Copyright 2011-2015 Twitter, Inc.
-Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-Source:http://getbootstrap.com
+* Font Awesome https://fortawesome.github.io/Font-Awesome/, (C) Dave Gandy, http://fontawesome.io/license/
 
-Animate CSS -- v3.4.0 --
-Copyright (c) 2015 Daniel Eden
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Animations -- v1.0 -- 
-Copyright 2014, Joe Mottershaw
-License: GNU General Public License v3 or later
-Source: https://github.com/joemottershaw/
+# Images
+All images are under Creative Commons Public Domain deed CC0.
 
-Customizer CSS  -- v1.0 -- 
-Copyright 2015 asiathemes
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl.html
+https://unsplash.com/photos/E9uJ65vwGmE
+https://pixabay.com/en/campus-820878/
+https://pixabay.com/en/desk-stationery-pens-rulers-600482/
 
-media-responsive CSS  |  v1.0 | 
-Copyright 2015 childcare
-Licensed under GPL
+# JS
 
-Fonts library 
-Font library license - SIL Open Font License, 1.1
-License URI: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
-Source: https://www.google.com/fonts
+jquery.sidr.js, https://github.com/artberri/sidr, (C) 2013 Alberto Varela, MIT License, https://github.com/artberri/sidr/blob/master/LICENSE
 
-*************** Images Description ***************
+lightslider.js, https://github.com/sachinchoolur/lightslider, (C) Sachin, MIT, http://opensource.org/licenses/MIT 
 
-Images Taken from : https://pixabay.com/
+jquery.counterup.js, Copyright 2013, Benjamin Intal,  https://github.com/bfintal/Counter-Up/blob/master/LICENSE
 
-** --> All other images were created by Asiathemes as per requirement.
-** --> All Image link is a free public picture and distributed under the terms of the Creative Commons CC0 Universal Public Domain Dedication
+waypoint.js, Copyright (c) 2011-2012 Caleb Troughton, MIT License, https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+    
 
-*************** Slider Images ***************
-Image1 :- https://pixabay.com/en/child-boy-kid-young-smile-face-163854/
+* Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-Image2 :- https://pixabay.com/en/run-jump-girl-children-hooray-sky-1321278/
 
-*************** Gallery Images URL ***************
-Image1 :-https://pixabay.com/en/little-boy-toddler-blue-eyes-995415/
+* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 
-Image2 :-https://pixabay.com/en/girl-young-child-happy-smiling-406137/
 
-Image3 :-https://pixabay.com/en/child-girl-people-library-books-684617/
+All other resources and theme elements are licensed under the GPLv2 or later
 
-*************** Hoome Blog Background Images ***************
-https://pixabay.com/en/child-girl-young-caucasian-1073638/
 
-**************************************************************
-All other Images have been used in the childcare theme, Created by asiathemes .Also they are GPL Licensed and free to use and free to redistribute further. 
+Education Zone WordPress Theme, Copyright Rara Theme 2015, Raratheme.com
+Education Zone WordPress Theme is distributed under the terms of the GPLv2 or later
 
-******************************************---- EOF ----******************************************
+
+*  This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   
+== Changelog ==
+    1.1.3
+    * Added front-page.php file.
+    * Added Footer settings option on customizer.
+    * Implemented TGMPA plugin.
+
+    1.1.2
+    * Changed stat counter to render commas.
+
+    1.1.1
+    * Made Theme RTL compatible
+    * Fixed minor design issues.
+    * Fixed minor issue on blog section.
+    * New: Added Video Tutorial Section on Customizer.
+
+    1.1.0
+    * Changed Screenshot.
+    * Made theme woocommerce compatible.
+
+    1.0.9
+    * Changed Screenshot.
+    * Fixed minor design issues.
+    
+    1.0.8
+    * Removed Information Links section from customizer. 
+
+    1.0.7
+    * Fixed issues mentioned on theme trac.
+
+    1.0.6
+    * Fixed issues mentioned on theme trac.
+
+    1.0.5
+    * Fixed minor issue.
+
+    1.0.4
+    * Fixed minor issues mentioned on theme trac.
+
+    1.0.3
+    * Removed custom CSS section. 
+    
+    1.0.2
+    * Fix some bugs.
+    
+    1.0.1
+    * Removed Footer menu, and extra footer widgets.
+    * Fix some bugs.    
+    
+    1.0.0
+    * Initial Release
